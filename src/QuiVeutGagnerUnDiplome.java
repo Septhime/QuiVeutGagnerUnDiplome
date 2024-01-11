@@ -118,7 +118,7 @@ class QuiVeutGagnerUnDiplome extends Program {
         centerText("Choisissez un niveau");
         print("\n\n");
         String name;
-        for (int i = 0; i < length(files); i++) {
+        for (int i = 0; i < length(files); i++) { // Boucle pour afficher les niveaux
             if (equals(substring(files[i], length(files[i])-4, length(files[i])), ".csv")) {
                 name = (i+1) + ".  ";
                 String levelName = getLevelNameFromFile(files[i]);
@@ -460,7 +460,7 @@ class QuiVeutGagnerUnDiplome extends Program {
         }
     }
 
-    void removeQuestionWithNoQuestionFromList(Question[] questions, int noquestion) {
+    void removeQuestionWithNoQuestionFromList(Question[] questions, int noquestion) { // Supprime une question d'une liste de questions avec son numéro de question
         for (int i = 0; i < maxquestions; i++) {
             if (questions[i].noquestion == noquestion) {
                 removeQuestionFromList(questions, i);
@@ -542,7 +542,7 @@ class QuiVeutGagnerUnDiplome extends Program {
         centerText(getLevelNameFromFile(filename));
         print("\n");
         String periodName = getPeriodNameFromFile(filename);
-        if (mode == 1) {
+        if (mode == 1) { // Mode Normal
             centerText(param[0] +" questions par " + periodName);
             centerText(param[1] +" " + periodName + "s");
         } else if (mode == 2 || mode == 4) { // Mode survie & Mode Mort Subite
@@ -600,11 +600,11 @@ class QuiVeutGagnerUnDiplome extends Program {
         return parameters;
     }
 
-    boolean interSemester(int actualsemester) { // Affiche le menu entre deux périodes
+    boolean interPeriod(int actualperiod) { // Affiche le menu entre deux périodes
         print(ANSI_CLEAR_SCREEN_ALL);
         showTextFromCSV("congrat");
         print("\n\n\n");
-        centerText("Vous avez réussi votre " + periodname + " " + actualsemester + " !");
+        centerText("Vous avez réussi votre " + periodname + " " + actualperiod + " !");
         print("\n\n");
         centerText("Que voulez-vous faire ?");
         print("\n\n");
@@ -616,8 +616,8 @@ class QuiVeutGagnerUnDiplome extends Program {
         if (input == 1) {
             return true;
         } else if (input == 2) {
-            createSave(actualsemester);
-            return interSemester(actualsemester);
+            createSave(actualperiod);
+            return interPeriod(actualperiod);
         }
         return false;
     }
@@ -674,7 +674,7 @@ class QuiVeutGagnerUnDiplome extends Program {
         int questionfail = parameters[2];
         int nbperiodpassed = actualperiod;
         boolean end = false;
-        while (nbperiodpassed < nbperiod && maxquestions > 0) { 
+        while (nbperiodpassed < nbperiod && maxquestions > 0) {
             int success = runPeriode(questions, nbquestion, questionfail, nbperiodpassed+1);
             if (success == 1) { // Si l'utilisateur a réussi la période
                 nbperiodpassed++;
@@ -687,9 +687,8 @@ class QuiVeutGagnerUnDiplome extends Program {
                 waitinputuser();
                 break;
             }
-            if ((parameters[2]+1) != nbperiodpassed && !interSemester(nbperiodpassed)) { // Si l'utilisateur ne veut pas continuer
+            if ((parameters[2]+1) != nbperiodpassed && !interPeriod(nbperiodpassed)) { // Si l'utilisateur ne veut pas continuer
                 end = true;
-                algorithm();
                 break;
             }
         }
@@ -711,17 +710,6 @@ class QuiVeutGagnerUnDiplome extends Program {
         int x = 0;
         
         while (x < nbquestion && questionfailed < nbquestionfail && maxquestions > 0) {
-
-            /*for (int y = 0; y < maxquestions; y++) { //Pour Debug
-                print((y+1) + " - ");
-                print(questions[y].question + " - ");
-                print(questions[y].reponses[0] + " - ");
-                print(questions[y].reponses[1] + " - ");
-                print(questions[y].reponses[2] + " - ");
-                print(questions[y].reponses[3] + " - ");
-                println(questions[y].bonneReponse);
-            }*/
-
             index = (int) (random()*maxquestions);
             actualquestion = questions[index];
             if (askquestion(actualquestion, x+1, nbperiod)) {
@@ -749,7 +737,7 @@ class QuiVeutGagnerUnDiplome extends Program {
 
     /// Mode Survie
 
-    void runSurvieModeLevel(Question[] questions) {
+    void runSurvieModeLevel(Question[] questions) { // Lance un niveau
         int nbquestion = length(questions);
         boolean end = false;
         int index;
