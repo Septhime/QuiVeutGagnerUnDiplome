@@ -693,11 +693,14 @@ class QuiVeutGagnerUnDiplome extends Program {
             }
         }
         if (!end) {
+            print(ANSI_CLEAR_SCREEN_ALL);
             if (nbperiodpassed == nbperiod || maxquestions == 0) {
-                println("Vous avez gagné");
+                centerText("Vous avez gagné");
             } else {
-                println("Vous avez perdu");
+                centerText("Vous avez perdu");
             }
+            print("\n\n");
+            waitinputuser();
         }
         algorithm();
     }
@@ -761,11 +764,14 @@ class QuiVeutGagnerUnDiplome extends Program {
             questionpassed++;
             waitinputuser();
         }
+        print(ANSI_CLEAR_SCREEN_ALL);
         if (!end) {
-            println("Il n'y a plus de question, vous avez répondu correctement à "+ questionpassed +" questions !");
+            centerText("Il n'y a plus de question, vous avez répondu correctement à "+ questionpassed +" questions !");
         } else {
-            println("Vous avez plus de HP, vous avez perdu...\nVous avez répondu correctement à " + questionpassed + " questions !");
+            centerText("Vous avez plus de HP, vous avez perdu...\nVous avez répondu correctement à " + questionpassed + " questions !");
         }
+        print("\n\n");
+        waitinputuser();
         algorithm();
     }
 
@@ -790,11 +796,14 @@ class QuiVeutGagnerUnDiplome extends Program {
             }
             waitinputuser();
         }
+        print(ANSI_CLEAR_SCREEN_ALL);
         if (!end) {
-            println("Il n'y a plus de question, vous avez répondu correctement à "+ nbquestionpassed +" questions !");
+            centerText("Il n'y a plus de question, vous avez répondu correctement à "+ nbquestionpassed +" questions !");
         } else {
-            println("Vous avez perdu...\n Vous avez répondu correctement à " + nbquestionpassed + " questions sur " + nbquestion + " !");
+            centerText("Vous avez perdu...\n Vous avez répondu correctement à " + nbquestionpassed + " questions sur " + nbquestion + " !");
         }
+        print("\n\n");
+        waitinputuser();
         algorithm();
     }
 
@@ -875,11 +884,14 @@ class QuiVeutGagnerUnDiplome extends Program {
                 break;
             }
         }
+        print(ANSI_CLEAR_SCREEN_ALL);
         if (!end) {
-            println("Vous avez gagné !");
+            centerText("Vous avez gagné !");
         } else {
-            println("Vous avez réussi à répondre correctement à " + nbquestionpassed + " questions sur 10 !");
+            centerText("Vous avez réussi à répondre correctement à " + nbquestionpassed + " questions sur 10 !");
         }
+        print("\n\n");
+        waitinputuser();
         algorithm();
     }
 }

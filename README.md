@@ -6,6 +6,8 @@ Contacts : sulivan.cerdan.etu@univ-lille.fr , timothee.varin.etu@univ-lille.fr
 
 # Présentation de Qui veut gagner un Diplôme ?
 
+ATTENTION ! Pour jouer de façon optimale, il est conseillé de jouer en 1920x1080 avec un zoom de 125%.
+
 <Description de votre jeu>
 Il s’agit d’une parodie de « Qui veut Gagner des millions » version éducative. Dans ce jeu, vous pouvez choisir plusieurs modes qui modifient la façon de jouer, mais ne modifient pas les questions posées. 
 
