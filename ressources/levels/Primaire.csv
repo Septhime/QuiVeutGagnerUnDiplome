@@ -1,13 +1,24 @@
-Primaire;2;3;2;année;;
-1;Combien de pattes a un chien ?;il en a 2;il en a 3;il en a 4;il en a 6;3;
-2;Comment dit-on un chien en anglais ?;a cat;a rabbit;a kitten;a dog;4;
-3;Être au présent la troisième personne du pluriel :;est;sont;fumes;suis;2;
-4;Quelle est la capitale de France ?;Marseille;Lille;Grenoble;Paris;4;
-5;Combien de fleuves y a-t-il en France ?;trois;Six;Quatre;Cinq;4;
-6;En comptant dans l'ordre décroissant, qu'est-ce qui arrive après 7 ?;Cinq;Huit;Six;Neuf;3;
-7;Quel est la planète la plus proche de la Terre ?;Venus;Mars;Pluton;Jupiter;1;
-8;Quel mois arrive après avril ?;Janvier;Août;Mai;Juin;3;
-9;Sur la main gauche, comment s'appelle le deuxième doigt en partant de la gauche ?;Le pouce;Le majeur;L'index;null;3;
-10;Quel est l'intrus ?;Fleur;Érable;Bouleau;Sapin;1;
-11;Combien d'os a un adulte bien formé ?;206;303;404;189;1;
-12;Combien de fruits et légumes faut-il manger par jour au minimum ?;3;5;50;7;2;
+Primaire;2;3;2;;;
+1;Combien de pattes a un chien ?;il en a 2;il en a 3;il en a 4;il en a 6;3
+2;Comment dit-on un chien en anglais ?;a cat;a rabbit;a kitten;a dog;4
+3;Être au present la troisieme personne du pluriel :;est;sont;fumes;suis;2
+4;Quelle est la capitale de la France ?;Marseille;Lille;Grenoble;Paris;4
+5;Combien y a t-il de fleuves en France ?;trois;Six;Quatre;Cinq;4
+6;En comptant dans l'ordre décroissant style 59, 58, 57. Qu'est-ce qui arrive après 7;Cinq;Huit;Six;Neuf;3
+7;Quelle est la planète la plus proche de la Terre ?;Venus;Mars;Pluton;Jupiter;1
+8;Quel mois arrive après Avril ?;Janvier;Août;Mai;Juin;3
+9;Sur la main gauche, comment s'appelle le deuxième doigt en partant de la gauche ?;Le pouce;le majeur;l'index;null;3
+10;quels est l'intrus ?;fleur;Herable; Bouleau;Sapin;1
+11;Combien d'os a un adultes bien formé ?;206;303;404;189;1
+12;Combien de fruits et légumes faut-il manger par jour au minimum :;3;5;50;7;2
+13;Quels est l'accent circonflexe ?;é;è;ê;null;3
+14;Combien de quarts d'heure y a-t-il dans 1 heure ?;4;6;5;10;1
+15;Vrai ou faux : le roi Charlemagne a créé l'école en France.;VRAI;FAUX;null;null;1
+16;Dans quel pays trouve-t-on particulièrement les hiéroglyphes ?;Chine;Egypte;Chez le medecin;Grèce;2
+17;Qui est Jules César?;Un dieu;Un empereur;Un chef politique romain;null;3
+18;Qui est Vercingétorix?;Une personne classique;Un chef gaulois;Un égyptien;null;2
+19;Trouve l'intrus :;Tintin;Asterix;Oggy;Nicolas Tesla;4
+20;Qu'est-ce qui n'appartient pas au champ lexical du travail ?;Metier;Emploie;Patron;préhistoire;4
+21;Que veut dire démocratie?;Le pouvoir aux grands;Le pouvoir au peuple;Le pouvoir à un petit nombre;null;2
+22;Qu'est-ce qu'un dictateur ?;Un chef d'armée;Un chef qui a tous les pouvoirs;Un politicien;Un Professeur;2
+23;Quel est le bon ordre ?;Collège Lycée Primaire;Lycée Collège Primaire;Primaire Collège Lycée;null;3
